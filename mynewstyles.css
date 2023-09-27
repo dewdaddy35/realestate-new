@@ -211,7 +211,11 @@ margin: 30px 0;
     width: 100%;
 }
 .form-container{
-    margin: 20px;
+    margin: 10px;
+}
+.form-container-pro{
+    margin: 10px;
+    margin-bottom: 50px;
 }
 .form-container input{
     display: block;
@@ -226,7 +230,7 @@ margin: 30px 0;
     background-color: lightgray;
     padding: 5px;
     border: none;
-    border-bottom: 5px;
+    border-bottom: 100px;
 }
 /* contact */
 .btn-send {
@@ -236,4 +240,10 @@ margin: 30px 0;
     text-align: left;
     padding: 5px;
     border-radius: 0px;
+}
+.flex-radio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: left;
 }

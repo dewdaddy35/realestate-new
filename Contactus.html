@@ -21,6 +21,7 @@
         <p class="contact-p">Fill in the next information</p>
         <h2>Contact</h2>
         <fieldset>
+            <div class="form-container-pro">
             <legend> Personal Information</legend>
             <div class="form-container">
                 <label>Name</label>
@@ -35,9 +36,10 @@
                     <input type="text">
                 </div>
                 <div class="form-container">
-                    <label form-container-m>Message</label>
+                    <label class="form-container-m">Message</label>
                     <input type="text">
                 </div>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Product Information</legend>
@@ -58,15 +60,13 @@
         </fieldset>
         <fieldset>
             <legend>Contact Information</legend>
-            <div>
+            <div class="flex-radio">
                 <input type="radio" value="phone">
-                <label for="">Phone</label>
-            </div>
-            <div>
+                <label>Email</label>
                 <input type="radio" value="email">
-                <label for="select">Email</label>
+                <label>Phone</label>
+                </div>
                 <p>If you prefer to be contacted by phone. Please select a day and time.</p>
-            </div>
             <div class="form-container">
                 <label>Date:</label>
                 <input type="date" value="dd-mm-yyyy" min="2023-09-01" max="2099-12-31">
