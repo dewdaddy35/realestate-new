@@ -3,25 +3,29 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    }
-    .container{
+.container{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
 .container-main{
     width: 80%;
         margin-left: 150px;
         margin-right: auto;
         align-items: center;
 }
-.flex-container{
+.flex-container{    /*desktop*/
         display: flex;
         background-color: white;
         color: black;
 }
+@media(max-width:767px) {
+            .flex-container{
+                flex-direction: column;
+            }
+        }
+
 .flex-container-t{
             display: flex;
             justify-content: space-evenly;
@@ -57,11 +61,13 @@ h1{
     text-align: left;
     padding: 20px;
 }
+
 h3{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 a{ 
+    margin-right: 10px;
     color: white;
 }
 img{
@@ -69,6 +75,9 @@ img{
 }
 /*header*/
 header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     background-image: url(img/header.jpg);
     background-position: center center;
     background-size: cover;
@@ -78,6 +87,17 @@ header{
 header .flex-container{
     margin-left: 8%;
 }
+@media(max-width:768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
 header h1{
     color:white;
 }
@@ -85,15 +105,16 @@ h2{
     color: black;
 }
 nav{
+    display: flex;
     word-spacing: 15px;
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
 }
 header .img{
     width: 2px
-}
-header nav{
-
-        margin-left: 80%;
-    position: relative; top: -45px;
 }
 header p{
         text-align: left;
@@ -119,6 +140,17 @@ margin:20px 0;
     color: black;
     font-size: 30px;
     margin: 20px 0;
+}
+@media(max-width:767px){
+    .more-about img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .more-about h3{
+        text-align: center;
+    }
 }
 .more-about p{
     color: black;
@@ -172,6 +204,7 @@ margin: 20px 0;
 }
 .flex-icon img{
     margin-right: 20px;
+    padding-bottom: 10px;
 }
 /*contact*/
 .contact{
@@ -220,6 +253,10 @@ margin: 20px 0;
     padding: 5px;
     border-radius: 0px;
 }
+
+.btn-pad{
+    padding-top: 10px;
+}
 .flex-radio{
     display: flex;
     flex-direction: row-reverse;
@@ -237,4 +274,30 @@ margin: 20px 0;
     padding: 5px;
     border: none;
     border-radius: 5px;
+}
+/* footer */
+footer{
+    background-image: url(img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 175px;
+    text-align:center;
+    color: white;
+    
+    
+}
+.footer-h{
+    align-content: left;
+    padding-top: 7%;
+}
+.contactus{display: inline-block;
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    padding-block: 5px;
+    padding-inline: 375px;
+}
+.footer-c{
+    padding-top: 5px;
 }
